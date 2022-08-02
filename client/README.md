@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+#To run application locally you need:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.	Open any application in which will be possible to enter commands (cmd, bash or IDE with built-in command prompt (visual studio code, webstorm etc.))
+2.	You need to install a node js or make sure that you have this program installed
+3.	To check if you have nodejs installed, enter on the command prompt command:
+###      `node -v`
+  If you see in the console version of your program, message like:`v16.13.0` you can move on to the next step. If there is no such message, then you need to go to the website [https://nodejs.org/en/](https://nodejs.org/en/) and install the program. Install the program which marked LTS
+4.	You must create a folder where the application will be copied. It better to do in your operating system (WindowsOS, MacOS etc.)
+5.	Go in command prompt or open in the IDE the path where the application will be located
+6.	To get a GitHub repository, enter on the command prompt command:
+###  `git clone https://github.com/bukadp/book-list`
+7.	To get all the necessary packages for the application enter the command:
+###  `npm install`
+8.	You need to go to the server folder, for this enter the command:
+###  `cd server`
+9.	You need to start the server, enter the command:
+###  `json-server db.json -p 3001`
+10.	You need to go to the client folder, enter the command:
+###  `cd ../`
+after enter the command:
+###  `cd client`
+11.	You need to start application, enter the command:
+###  `npm start`
+12. The application will be open in your default browser via the link
+    [http://localhost:3000](http://localhost:3000)

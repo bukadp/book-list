@@ -24,6 +24,15 @@ export const booksAPI = {
         })
         await window.location.reload()
     },
+    async editBook(book) {
+        await fetch((baseUrl+book.id), {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(book)
+        })
+    },
 }
 
 /*export const booksAPI = {

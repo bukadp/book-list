@@ -1,10 +1,9 @@
 import React from 'react';
 import AddBook from "./AddBook";
-import {NavLink} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 
 
-function AddBookContainer() {
+function AddBookContainer(props) {
 
     return (
         <div>

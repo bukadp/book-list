@@ -1,13 +1,6 @@
 {
   "books": [
     {
-      "title": "The Hobbit",
-      "author": "J. R. R. Tolkien",
-      "category": "Fantasy",
-      "isbn": "978-0-8020-9086-7",
-      "id": 1
-    },
-    {
       "title": "The Lord of the Rings",
       "author": "J. R. R. Tolkien",
       "category": "Fantasy",
@@ -22,11 +15,11 @@
       "id": 3
     },
     {
-      "title": "last of us",
-      "isbn": "1-2-3-2222-2",
-      "category": "Fantacy",
-      "author": "none",
-      "id": 6
+      "title": "Harry Potter",
+      "isbn": "9780747532743",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "id": 8
     }
   ]
 }

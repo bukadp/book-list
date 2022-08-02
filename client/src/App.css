@@ -7,6 +7,6 @@
 }
 
 
-.box {
-  border: solid 5px red;
+.pointer {
+  cursor: pointer;
 }
