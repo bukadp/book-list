@@ -41,13 +41,12 @@ function EditBook() {
         const newErrors = {}
         const re = /^(\d+-?)+$/
         const ok = re.test(isbn);
-        console.log('ok', ok)
 
         if (!title || title === '') newErrors.title = 'Please enter title of the book'
         if (!author || author === '') newErrors.author = 'Please enter author of the book'
         if (!category || category === 'Select category') newErrors.category = 'Please select category'
         if (!isbn || isbn === '') newErrors.isbn = 'Please enter isbn of the book'
-        else if (!ok) newErrors.isbn = 'ISBN may start from number. Contains only digits and dash'
+        else if (!ok) newErrors.isbn = 'ISBN may start from number. Contains only numbers and dash'
         return newErrors
     }
 
@@ -68,7 +67,6 @@ function EditBook() {
             setShow(false)
             navigate("/")
         }, 2000);
-
     }
 
     return (

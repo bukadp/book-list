@@ -5,7 +5,6 @@ import {booksAPI} from "../api/api";
 import {NavLink, useNavigate} from "react-router-dom";
 import {Modal} from "react-bootstrap";
 
-
 function AddBook() {
     const [form, setForm] = useState({})
     const [errors, setErrors] = useState({})
@@ -36,13 +35,12 @@ function AddBook() {
         const newErrors = {}
         const re = /^(\d+-?)+$/
         const ok = re.test(isbn);
-        console.log('ok', ok)
 
         if (!title || title === '') newErrors.title = 'Please enter title of the book'
         if (!author || author === '') newErrors.author = 'Please enter author of the book'
         if (!category || category === 'Select category') newErrors.category = 'Please select category'
         if (!isbn || isbn === '') newErrors.isbn = 'Please enter isbn of the book'
-        else if (!ok) newErrors.isbn = 'ISBN may start from number. Contains only digits and dash'
+        else if (!ok) newErrors.isbn = 'ISBN may start from number. Contains only numbers and dash'
         return newErrors
     }
 
@@ -59,7 +57,8 @@ function AddBook() {
     const fetchApiPostBook = async (book) => {
         await booksAPI.postBook(book)
         await setShow(true)
-        setTimeout(() => {setShow(false)
+        setTimeout(() => {
+            setShow(false)
             navigate("/")
         }, 2000);
 

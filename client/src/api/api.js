@@ -16,7 +16,7 @@ export const booksAPI = {
         })
     },
     async deleteBook(id) {
-        await fetch((baseUrl+id), {
+        await fetch((baseUrl + id), {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -25,7 +25,7 @@ export const booksAPI = {
         await window.location.reload()
     },
     async editBook(book) {
-        await fetch((baseUrl+book.id), {
+        await fetch((baseUrl + book.id), {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -34,18 +34,4 @@ export const booksAPI = {
         })
     },
 }
-
-/*export const booksAPI = {
-
-    getData() {
-        let res
-        fetch(ULR)
-            .then((response) => response.json())
-            .then(data => {
-                res = data
-            })
-        return res
-    },
-
-}*/
 
